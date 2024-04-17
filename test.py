@@ -173,7 +173,6 @@ if __name__ == "__main__":
     # model initialize
     device = 'cuda'
     model = MotionNet(out_seq_len=5, motion_category_num=2, height_feat_size=13)
-    # model = nn.DataParallel(model)
     checkpoint = torch.load(args.model, map_location='cpu')
     model.load_state_dict(checkpoint)
     model = model.to(device)
