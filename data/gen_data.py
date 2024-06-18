@@ -49,7 +49,7 @@ else:
 voxel_size = (0.25, 0.25, 0.4)
 area_extents = np.array([[-32., 32.], [-32., 32.], [-3., 2.]])
 past_frame_skip = 3  # when generating the BEV maps, how many history frames need to be skipped
-future_frame_skip = 3#0  # when generating the BEV maps, how many future frames need to be skipped
+future_frame_skip = 0  # when generating the BEV maps, how many future frames need to be skipped
 num_past_frames_for_bev_seq = 5  # the number of past frames for BEV map sequence
 
 
